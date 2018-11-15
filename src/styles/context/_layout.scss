@@ -1,0 +1,25 @@
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(">=mobile") {
+    max-width: $mobile;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @include media(">=tablet") {
+    max-width: $tablet;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @include media(">=desktop") {
+    max-width: $desktop;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+
